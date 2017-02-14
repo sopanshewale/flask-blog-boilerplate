@@ -1,0 +1,10 @@
+
+<div ng-repeat="post in posts | orderBy: 'id':true ">
+	<h4><a href="/post/{{ post.id }}">{{ post.title }}</a></h4>
+	<b>Summary: {{ post.summary }}</b>
+	<p>{{ post.body }}<p>
+        
+    
+        <hr>
+
+</div>
